@@ -34,12 +34,20 @@
     
            /* EX3) Write a selector to target the "continue reading..." inside the jumbotron */
 
-           
+           .jumbotron p a {
+               color: red !IMPORTANT;
+           }
            /* EX4) Write a selector to target the first blogpost */
 
-
+           .blog-post:nth-child(2) {
+               color: red;
+           }
+           
            /* EX5) Write a selector to target the "even" links in the navbar */
 
+           .nav > a:nth-child(even) {
+               background-color: black !IMPORTANT;
+               }
 
            /* EX6) Write a selector to target the last blog post */
 
@@ -144,7 +152,7 @@
         </div>
       </header>
 
-      <div id="navbar" class="nav-scroller py-1 mb-2">
+      <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between">
           <a class="p-2 text-muted" href="#">World</a>
           <a class="p-2 text-muted" href="#">U.S.</a>
