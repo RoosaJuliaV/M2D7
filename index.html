@@ -521,16 +521,22 @@
 
         const changeBackground = function() {
             let getBackground = document.querySelector(".bg-dark")
-            console.log(getBackground)
             getBackground.classList.remove("bg-dark")
           }
           window.addEventListener("load", function() { changeBackground("bg-light") })
+
+          // EX15) Write a function to change the column size for heading in jumbotron
+
+       const changeSize = function() {
+           let getObject = document.querySelector("h1")
+           getObject.classList.add("col-6")
+       }
+       window.addEventListener("load", function() { changeSize("h1") })
 
           // EX16) Write a function to remove the "Search" magnifying glass icon
 
           const removeIcon = function() {
             let getObject = document.querySelector("svg")
-            console.log(getObject)
             getObject.remove("svg")
           }
           window.addEventListener("load", function() { removeIcon("svg") })
@@ -543,15 +549,7 @@
 
 
 
-       // EX15) Write a function to change the column size for heading in jumbotron
-
-       // EX16) Write a function to remove the "Search" magnifying glass icon
-
-       const removeIcon = function() {
-           let element = document.querySelector("svg")
-           remove.element
-       }
-
+       
        // EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
 
        // EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
