@@ -20,7 +20,6 @@
         
     
            /* EX1) Write a selector to target the h1 in jumbotron */
-           
 
            .jumbotron h1 {
             color: red;
@@ -37,6 +36,7 @@
            .jumbotron p a {
                color: red !IMPORTANT;
            }
+
            /* EX4) Write a selector to target the first blogpost */
 
            .blog-post:nth-child(2) {
@@ -51,20 +51,32 @@
 
            /* EX6) Write a selector to target the last blog post */
 
+           .blog-post:nth-child(4) {
+               color: red;
+           }
 
            /* EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives ) */
 
+           .p-4:nth-child(2) ol li {
+               background-color: red;
+           }
 
           /* EX8) Write a selector to target the second post author */
 
+          .blog-post:nth-child(3) p:nth-child(2) a {
+              background-color: red;
+          }
 
           /* EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly */
 
+          footer p:nth-child(2) a {
+              background-color: black;
+          }
 
           /* EX10) Write a selector to target the footer */
 
-          .footer h1 {
-            color: red;
+          .blog-footer {
+            background-color: red;
         }
         
     </style>
