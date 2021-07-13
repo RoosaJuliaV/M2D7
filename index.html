@@ -500,7 +500,6 @@
           const addToNavbar = function(link) {
           let navbar = document.getElementsByClassName("nav")[0]
           let newLink = document.createElement("a")
-          console.log(navbar)
           let linkText = document.createTextNode(link)
           newLink.appendChild(linkText)
           newLink.title = link
@@ -520,13 +519,25 @@
 
         // EX13) Write a function to change the background of the jumbotron */
 
-        const changeBackground = function(color) {
-            let element = document.getElementsByClassName("jumbotron")
-            element.style.bg-color = color 
-   }
-    window.addEventListener("load",function() { changeBackground("orange") })
+        const changeBackground = function() {
+            let getBackground = document.querySelector(".bg-dark")
+            console.log(getBackground)
+            getBackground.classList.remove("bg-dark")
+          }
+          window.addEventListener("load", function() { changeBackground("bg-light") })
+
+          // EX16) Write a function to remove the "Search" magnifying glass icon
+
+          const removeIcon = function() {
+            let getObject = document.querySelector("svg")
+            console.log(getObject)
+            getObject.remove("svg")
+          }
+          window.addEventListener("load", function() { removeIcon("svg") })
 
       </script>
+
+      <!--
 
         // EX14) Write a function to remove all the links under "Elsewhere"
 
@@ -536,13 +547,18 @@
 
        // EX16) Write a function to remove the "Search" magnifying glass icon
 
+       const removeIcon = function() {
+           let element = document.querySelector("svg")
+           remove.element
+       }
+
        // EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
 
        // EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
 
        // EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
 
-       // EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
+       // EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name -->
     
   </body>
 </html>
