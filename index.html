@@ -525,6 +525,14 @@
           }
           window.addEventListener("load", function() { changeBackground("bg-light") })
 
+          // EX14) Write a function to remove all the links under "Elsewhere"
+
+           const removeAll = function() {
+            let getObject = document.querySelectorAll(".list-unstyled")[1]
+            getObject.remove("li")
+            }
+            window.addEventListener("load", function() { removeAll("li") })
+
           // EX15) Write a function to change the column size for heading in jumbotron
 
        const changeSize = function() {
@@ -543,14 +551,10 @@
 
       </script>
 
-      <!--
-
-        // EX14) Write a function to remove all the links under "Elsewhere"
-
 
 
        
-       // EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
+      <!-- // EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
 
        // EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
 
