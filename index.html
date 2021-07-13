@@ -492,16 +492,45 @@
       </p>
     </footer>
 
-    <script>
-      /*
-        JS Exercises
-        EX11) Write a function to add a new link into the navbar */
 
-        // EX12) Write a function to change the color of the main title
+        <script>
 
-        // EX13) Write a function to change the background of the jumbotron
+       // EX11) Write a function to add a new link into the navbar
+
+          const addToNavbar = function(link) {
+          let navbar = document.getElementsByClassName("nav")[0]
+          let newLink = document.createElement("a")
+          console.log(navbar)
+          let linkText = document.createTextNode(link)
+          newLink.appendChild(linkText)
+          newLink.title = link
+          newLink.href = "#"
+          newLink.className ="p-2 text-muted"
+          navbar.appendChild(newLink)
+    }
+      window.addEventListener("load", function() { addToNavbar("New Link") })
+
+       // EX12) Write a function to change the color of the main title
+
+      const changeTitleColor = function(color) {
+            let title = document.querySelector("h1")
+            title.style.color = color
+        }
+        window.addEventListener("load", function() { changeTitleColor("black") })
+
+        // EX13) Write a function to change the background of the jumbotron */
+
+        const changeBackground = function(color) {
+            let element = document.getElementsByClassName("jumbotron")
+            element.style.bg-color = color 
+   }
+    window.addEventListener("load",function() { changeBackground("orange") })
+
+      </script>
 
         // EX14) Write a function to remove all the links under "Elsewhere"
+
+
 
        // EX15) Write a function to change the column size for heading in jumbotron
 
@@ -514,6 +543,6 @@
        // EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
 
        // EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
-    </script>
+    
   </body>
 </html>
